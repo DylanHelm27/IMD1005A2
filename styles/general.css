@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Media Queries */
+body {
+    min-height: 100vh;
+    font-family: "Inknut Antiqua", "PT Sans", "Sans Serif";
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 2px;
+}
+
+
+body.darkMode {
+    background-color: #111;
+    color: #eee;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Non Media Query Related */
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    background-color: rgb(2, 82, 156);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease-in-out;
+}
+
+
+nav a:hover {
+    color: rgb(220, 30, 53);
+}
+
+.button {
+    position: relative;
+
+}
+
+.button a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+p {
+    font-family: "PT Sans";
+}
+
+.darkmode {
+    background-color: rgb(220, 30, 53);
+    color: #eee;
+    border: 5px;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: rgb(2, 82, 156);
+    color: white;
+    border: 2px solid rgb(220, 30, 53);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 3px 10px black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(2, 82, 156);
+    color: white;
+    border-top: 2px solid rgb(220, 30, 53);
+}
+
+
+
+
+@media screen and (width >= 900px) {
+
+    .grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+    }
+
+}

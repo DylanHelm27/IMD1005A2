@@ -1,0 +1,6 @@
+.google_map {
+    width: 100%;
+    max-width: 600px; /* Adjust max width as needed */
+    margin: 0 auto; /* Centers the map */
+    padding: 10px;
+}
