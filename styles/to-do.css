@@ -1,0 +1,8 @@
+.grid
+{
+    grid-template-columns: auto 1fr;
+}
+.grid2
+{
+    grid-template-columns:  1fr auto;
+}
