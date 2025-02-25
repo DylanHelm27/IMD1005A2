@@ -1,0 +1,30 @@
+.carousel {
+    position: relative;
+    --height: 400px;
+    
+    height: var(--height);
+    width: 900;
+}
+
+.carousel .images
+{
+    height: var(--height);
+    background-color: black;
+}
+.carousel img {
+    height: var(--height);
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+    transition: opacity 0.5s;
+}
+
+.carousel img:first-child {
+    z-index: 1;
+}
+
+.hidden  {
+    opacity: 0;
+    pointer-events: none;
+}

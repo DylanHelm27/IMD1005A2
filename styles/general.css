@@ -6,7 +6,7 @@ body {
     font-family: "Inknut Antiqua", "PT Sans", "Sans Serif";
     display: grid;
     grid-template-rows: auto 1fr auto;
-    padding: 2px;
+    padding: 5px;
 }
 
 
@@ -32,8 +32,8 @@ body.darkMode {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 10px;
+    justify-items: center;
 }
-
 /* Non Media Query Related */
 header {
     position: sticky;
@@ -41,6 +41,7 @@ header {
     z-index: 100;
 }
 
+/* Navigation Styles */
 nav {
     display: flex;
     justify-content: center;
@@ -48,30 +49,37 @@ nav {
     padding: 20px;
     background-color: rgb(2, 82, 156);
 }
-
+/* All Links in Nav class */
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    transition: color 0.3s ease-in-out;
+    transition: color 0.5s ease-in-out;
+    
 }
-
-
+/* Links when they are hovering */
 nav a:hover {
     color: rgb(220, 30, 53);
-}
+    font-size:110%;
 
+}
+/* Button Styles */
 .button {
     position: relative;
 
 }
-
+/* Links in Buttons */
 .button a {
     text-decoration: none;
 }
 
+/* Headings 1 & 2 Styles */
 h1,
 h2 {
     text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
 }
 
 p {
@@ -101,15 +109,22 @@ footer {
     background-color: rgb(2, 82, 156);
     color: white;
     border-top: 2px solid rgb(220, 30, 53);
+    position: sticky;
+    margin-top: 10px;
+}
+
+.hidden  {
+    opacity: 0;
+    pointer-events: none;
 }
 
 
 
 
-@media screen and (width >= 900px) {
+/* Media Query for Desktop */
+@media screen and (width >=900px) {
 
-    .grid
-    {
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;

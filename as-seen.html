@@ -4,29 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link rel="icon" href="images/iceland_favicon.ico">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/general.css">
-
+    <link rel="stylesheet" href="styles/as-seen.css">
+    <!-- Document Title -->
     <title>As Seen In</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
+        <!-- Navigation -->
         <nav>
             <a href="index.html">HOME</a>
             <a href="gallery.html">GALLERY</a>
             <a href="to-do.html">TO DO</a>
             <a href="as-seen.html">AS SEEN IN</a>
-
+            <!-- Dark Mode Button -->
             <div class="container">
                 <button class=darkmode onclick="ToggleDarkMode()" aria-label="ToggleDarkMode"><span id="btn_darkmode"
                         class="material-symbols-outlined">DARK MODE</span></button>
             </div>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div>
+            <!-- Page Titles -->
+            <h1>As Seen In</h1>
+        </div>
+        <div>
+            <p>Iceland is an area where lots of films have been filmed. Here are some of them.</p>
+        </div>
+        <!-- Carousel for Slideshow -->
+        <div id="carousel" class="carousel">
+            <div class=images>
+                <img src="https://dummyimage.com/1920x1080/000/fff" alt="">
+                <img src="https://dummyimage.com/600x400/000/fff" alt="">
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>-- Dylan Helmer IMD1005 2025 --</p>
+    </footer>
+    <!-- Calls Scripts -->
+    <script src="scripts/dark_mode.js"></script>
+    <script src="scripts/carousel.js"></script>
 </body>
 
 </html>
