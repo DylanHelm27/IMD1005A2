@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 0;
-    gap: 5px;
+    gap: 10px;
 }
 
 .imgViewer {
@@ -23,15 +23,47 @@
     transition: opacity 0.5s;
 }
 
+.gallery-container
+{
+    width: auto;
+    height: auto;
+    border: 1px solid var(--darkbg);
+}
+
+.gallery-container:hover
+{
+  transform: translateY(-5px);
+  box-shadow: 0 3px 10px var(--darkbg);
+}
+
+.gallery img
+{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
 
 @media screen and (width >= 900px) {
 
     .three-col
     {
         display: grid;
+        grid-template-columns:1fr 1fr;
+        padding: 15px;
+        gap: 15px;        
+    }
+
+}
+
+@media screen and (width >= 1400px) {
+
+    .three-col
+    {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 50px;
-        gap: 50px;        
+        padding: 15px;
+        gap: 15px;        
     }
 
 }

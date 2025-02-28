@@ -1,7 +1,8 @@
-.google_map {
-    width: 100%;
-    max-width: 600px; /* Adjust max width as needed */
-    margin: 0 auto; /* Centers the map */
+
+/* Google Map iframe styles */
+.google-map {
+    width: auto;
+    height: 91%;
+    max-height: 800px;
     padding: 10px;
 }
-

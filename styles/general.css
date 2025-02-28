@@ -1,23 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Media Queries */
+/* Defines colours as variables */
+:root {
+    --blue: rgb(2, 82, 156);
+    --darkblue: #0f1d2c;
+    --red: rgb(220, 30, 53);
+    --darkred: #961b29;
+    --darkbg: #111;
+    --bg: rgb(219, 243, 254);
+}
+
+/* General Body Styles */
 body {
     min-height: 100vh;
     font-family: "Inknut Antiqua", "PT Sans", "Sans Serif";
     display: grid;
     grid-template-rows: auto 1fr auto;
-    padding: 5px;
+    background-color: var(--bg);
+    color: var(--darkbg);
+    transition: background-color 0.3s, color 0.3s;
+    margin: auto;
 }
 
-
+/* Dark Mode Styles */
 body.darkMode {
-    background-color: #111;
-    color: #eee;
+    background-color: var(--darkbg);
+    color: var(--bg);
 }
 
-.container {
-    position: relative;
-    text-align: center;
+body.darkMode .card {
+    background-color: var(--darkblue);
+    color: var(--bg);
+    border: 2px solid var(--darkred);
+}
+
+body.darkMode nav,
+body.darkMode footer {
+    background-color: var(--darkblue);
+}
+
+body.darkMode nav a:hover {
+    color: var(--darkred);
+    font-size: 110%;
+}
+
+body.darkMode button {
+    background-color: #111;
+    color: var(--bg);
+}
+
+body.darkMode button a {
+    color: var(--bg);
+}
+
+body.darkMode button:hover {
+    background: var(--darkred);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--blue);
+    color: var(--bg);
+    border-top: 2px solid var(--red);
+    position: sticky;
+    margin-top: 10px;
+}
+
+footer {
+    border-top: 2px solid var(--red);
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    background-color: var(--blue);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg);
+    transition: color 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--red);
+    font-size: 115%;
+}
+
+/* Gallery and Grid Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    justify-items: center;
 }
 
 .centered {
@@ -27,108 +108,81 @@ body.darkMode {
     transform: translate(-50%, -50%);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
-    justify-items: center;
-}
-/* Non Media Query Related */
-header {
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-}
-
-/* Navigation Styles */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+/* Card Styles */
+.card {
+    background-color: var(--blue);
+    color: var(--bg);
+    border: 2px solid var(--red);
+    border-radius: 20px;
     padding: 20px;
-    background-color: rgb(2, 82, 156);
-}
-/* All Links in Nav class */
-nav a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: color 0.5s ease-in-out;
-    
-}
-/* Links when they are hovering */
-nav a:hover {
-    color: rgb(220, 30, 53);
-    font-size:110%;
+    margin: 15px;
+    box-shadow: 0 3px 10px var(--darkbg);
+    transition: background-color 0.3s, color 0.3s;
 
 }
+
+.card:hover {
+    transform: scale(101%);
+
+}
+
 /* Button Styles */
 .button {
     position: relative;
-
+    color: var(--darkbg);
 }
-/* Links in Buttons */
+
 .button a {
     text-decoration: none;
+    color: var(--darkbg);
 }
 
-/* Headings 1 & 2 Styles */
+button:hover {
+    background: var(--red);
+    cursor: pointer;
+    transform: scale(115%);
+
+}
+
+button:active {
+    background: var(--red);
+    transform: translateY(3px);
+    box-shadow: 0 0 2px var(--darkbg);
+}
+
+/* Hidden */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Text and Heading Styles */
 h1,
 h2 {
     text-align: center;
 }
 
-h1 {
-    text-decoration: underline;
-}
 
 p {
     font-family: "PT Sans";
+    font-weight: bold;
 }
 
-.darkmode {
-    background-color: rgb(220, 30, 53);
-    color: #eee;
-    border: 5px;
-    border-radius: 5px;
+/* Layout Adjustment for Media Queries */
+@media screen and (max-width: 900px) {
+    .small {
+        display: block;
+    }
+
+    .big {
+        display: none;
+    }
 }
 
-.card {
-    background-color: rgb(2, 82, 156);
-    color: white;
-    border: 2px solid rgb(220, 30, 53);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 3px 10px black;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(2, 82, 156);
-    color: white;
-    border-top: 2px solid rgb(220, 30, 53);
-    position: sticky;
-    margin-top: 10px;
-}
-
-.hidden  {
-    opacity: 0;
-    pointer-events: none;
-}
-
-
-
-
-/* Media Query for Desktop */
-@media screen and (width >=900px) {
-
+@media screen and (min-width: 900px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-
     }
-
 }

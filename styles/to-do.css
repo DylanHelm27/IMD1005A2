@@ -1,13 +1,17 @@
 .grid
 {
-    grid-template-columns: auto 1fr;
-}
-.grid2
-{
-    grid-template-columns:  1fr auto;
+    grid-template-columns: 1fr,auto;
 }
 
-.card
+.grid2
 {
-    padding: 15px;
+    grid-template-columns: 1fr,1fr;
+}
+
+@media screen and (min-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
 }

@@ -1,30 +1,84 @@
 .carousel {
-    position: relative;
     --height: 400px;
-    
+
     height: var(--height);
-    width: 900;
+    width:600px;
+    position: relative;
+    justify-self: center;
+}
+.carousel .images {
+    height: var(--height);
+    background: black;
 }
 
-.carousel .images
-{
-    height: var(--height);
-    background-color: black;
-}
 .carousel img {
     height: var(--height);
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
     position: absolute;
 
     transition: opacity 0.5s;
+}
+
+.carousel button {
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 80px;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 0;
+    color: #ccc;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.carousel:hover button {
+    opacity: 1;
+}
+
+.carousel .btnRight {
+    right: 0;
+}
+.carousel button span {
+    font-size: 2em;
+    transition: transform 0.25s, color, 0.25s;
+}
+.carousel button:hover span {
+    transform: scale(1.5);
+    color: white;
 }
 
 .carousel img:first-child {
     z-index: 1;
 }
 
-.hidden  {
-    opacity: 0;
-    pointer-events: none;
+
+.caption
+{
+    
+}
+@media screen and (min-width: 900px) {
+    .carousel {
+        --height: 720px;
+        width: calc(100% - 20px);
+    
+        height: var(--height);
+        position: relative;
+        margin: 10px;
+    }
+
+    .carousel .images {
+        height: var(--height);
+        background: black;
+    }
+    
+    .carousel img {
+        height: var(--height);
+        width: 100%;
+        object-fit:cover;
+        position: absolute;
+    
+        transition: opacity 0.5s;
+    }
 }

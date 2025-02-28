@@ -14,7 +14,7 @@
 
 <body>
     <div id='imgViewer' class="imgViewer hidden">
-        
+
     </div>
     <header>
         <nav>
@@ -24,27 +24,63 @@
             <a href="as-seen.html">AS SEEN IN</a>
             <div class="container">
                 <button class=darkmode onclick="ToggleDarkMode()" aria-label="ToggleDarkMode"><span id="btn_darkmode"
-                        class="material-symbols-outlined">DARK MODE</span></button>
+                        >DARK MODE</span></button>
             </div>
         </nav>
     </header>
     <main>
         <h1>GALLERY</h1>
-        
-        <div id = "gallery"class="grid three-col gallery">
-            <div><img src="images/Header_Image.avif" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
-            <div><img src="https://dummyimage.com/300x300/000/fff" alt="G1"></div>
 
+        <div id="gallery" class="grid three-col gallery">
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-1-1000x.webp" alt="Hallgrímskirkja Church" data-full_image="Iceland-Gallery-1.webp">
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-2-1280x.webp" alt="Icelandic Scene" data-full_image="Iceland-Gallery-2.webp">
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-3-1000x.webp" alt="Vatnajökull National Park Ice Caves" data-full_image="Iceland-Gallery-3.webp">
+                </picture>
+            </div>           
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-4-1000x.jpg" alt="The Thórsmörk region: Rolling green hills" data-full_image="Iceland-Gallery-4.jpg">
+                </picture>
+            </div>  
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-5-1000x.avif" alt="Northern lights shine over Mount Kirkjufell" data-full_image="Iceland-Gallery-5.avif">
+                </picture>
+            </div>    
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-6-1000x.jpg" alt="Gulfoss Waterfalls" data-full_image="Iceland-Gallery-6.jpg">
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-7-1000x.webp" alt="The town of Seyðisfjörður covered in snow" data-full_image="Iceland-Gallery-7.webp">
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-8-1000x.webp" alt="Blue Lagoon Spa" data-full_image="Iceland-Gallery-8.webp">
+                </picture>
+            </div>
+            <div class=gallery-container>
+                <picture>
+                    <img src="images/Iceland-Gallery-9-1000x.jpg" alt="Skogafoss waterfall in South Iceland" data-full_image="Iceland-Gallery-9.jpg">
+                </picture>
+            </div>
         </div>
     </main>
-    <footer>        <p>-- Dylan Helmer IMD1005 2025 --</p>
+    <footer>
+        <p>&copy; Dylan Helmer IMD1005 2025 </p>
     </footer>
     <script src="scripts/dark_mode.js"></script>
     <script src="scripts/gallery.js"></script>
