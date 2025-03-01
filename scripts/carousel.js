@@ -46,7 +46,7 @@ function StartSlideshow() {
     slideInterval = setInterval(() => {
         index++
         SetSlide()
-    }, 3000)
+    }, 8000)
 }
 
 StartSlideshow()

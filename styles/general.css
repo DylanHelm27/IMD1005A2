@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Defines colours as variables */
+/* Defines colours as global variables */
 :root {
     --blue: rgb(2, 82, 156);
     --darkblue: #0f1d2c;
@@ -130,6 +130,7 @@ nav a:hover {
 .button {
     position: relative;
     color: var(--darkbg);
+    border-radius: 5px;
 }
 
 .button a {
@@ -166,6 +167,7 @@ h2 {
 p {
     font-family: "PT Sans";
     font-weight: bold;
+    margin: 15px;
 }
 
 /* Layout Adjustment for Media Queries */

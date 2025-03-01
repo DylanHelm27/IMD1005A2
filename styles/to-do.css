@@ -8,6 +8,24 @@
     grid-template-columns: 1fr,1fr;
 }
 
+p
+{
+    font-size: larger;
+}
+
+button .card
+{
+    width: fit-content;
+    height: auto;
+    margin: 10px;
+    justify-self: center;
+}
+
+button a
+{
+    text-decoration: none;
+}
+
 @media screen and (min-width: 900px) {
     .grid {
         display: grid;

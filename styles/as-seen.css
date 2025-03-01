@@ -20,13 +20,13 @@
     transition: opacity 0.5s;
 }
 
-.carousel button {
+.carousel button{
     top: 0;
     bottom: 0;
     z-index: 5;
     width: 80px;
+    height: 70px;
     position: absolute;
-
     background-color: rgba(0, 0, 0, 0.15);
     border: 0;
     color: #ccc;
@@ -34,6 +34,7 @@
     transition: opacity 0.5s;
 }
 .carousel:hover button {
+    background-color: rgba(0, 0, 0, 0.15);
     opacity: 1;
 }
 
@@ -53,14 +54,9 @@
     z-index: 1;
 }
 
-
-.caption
-{
-    
-}
 @media screen and (min-width: 900px) {
     .carousel {
-        --height: 720px;
+        --height: 675px;
         width: calc(100% - 20px);
     
         height: var(--height);
