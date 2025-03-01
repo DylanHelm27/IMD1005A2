@@ -18,4 +18,7 @@ GALLERY:
 I made the page responsive by having the gallery sqitch from 1, to 2 , to three columns. I also put a border on the images, as well as hover states to ensure visibility and clear active states.
 
 TO-DO:
-I wnted to have the cards alternating sides (image and Text vs Text and Image) to add some variety, I also made it responsive by having them stack on top of eachother at a smaller screen size.
+I wanted to have the cards alternating sides (image and Text vs Text and Image) to add some variety, I also made it responsive by having them stack on top of eachother at a smaller screen size.
+
+As Seen:
+I wasn't able to get the slideshow working with multiple resolutions with each image so unfortunatley they only use one image. I am happy with the customization of my arrows, as well as your help with captions helps bring the page together.

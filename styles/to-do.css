@@ -25,6 +25,12 @@ button a
 {
     text-decoration: none;
 }
+button:hover {
+    background: var(--red);
+    cursor: pointer;
+    transform: scale(101%);
+
+}
 
 @media screen and (min-width: 900px) {
     .grid {

@@ -127,15 +127,21 @@ nav a:hover {
 }
 
 /* Button Styles */
-.button {
+button {
     position: relative;
     color: var(--darkbg);
     border-radius: 5px;
 }
 
-.button a {
+
+button a {
     text-decoration: none;
     color: var(--darkbg);
+}
+
+.card button
+{
+    margin-top: 10px;
 }
 
 button:hover {
