@@ -21,7 +21,11 @@ body {
     transition: background-color 0.3s, color 0.3s;
     margin: auto;
 }
-
+.header img
+{
+    width: 100%;
+    opacity: 45%;
+}
 /* Dark Mode Styles */
 body.darkMode {
     background-color: var(--darkbg);
@@ -131,6 +135,7 @@ button {
     position: relative;
     color: var(--darkbg);
     border-radius: 5px;
+    background-color: var(--bg);
 }
 
 

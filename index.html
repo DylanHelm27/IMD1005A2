@@ -15,6 +15,8 @@
 </head>
 
 <header>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>  
     <!-- Nav -->
     <nav>
         <!-- Links in Nav -->
@@ -27,22 +29,24 @@
             <button class="darkmode button" onclick="ToggleDarkMode()" aria-label="ToggleDarkMode"><span id="btn_darkmode">DARK
                     MODE</span></button>
         </div>
+
     </nav>
+
 </header>
 
 <main>
     <!-- Image Header  -->
     <div class="container header">
-        <img src="images/Header_Image.avif" alt="title image" style="width: 100%; opacity: 45%; ">
+        <img src="images/Header_Image.avif" alt=" Northern Lights over Iceland ">
         <div class="centered">
             <h1>ICELAND</h1>
         </div>
     </div>
 
-    <div class=grid>
+    <div class="grid">
         <div>
-            <h2>About Iceland</h2>
-            <!-- Card for About ICeland -->
+            <h2 id="main-content">About Iceland</h2>
+            <!-- Card for About Iceland -->
             <div class="card">
                 <img src="images/Header_Image-1280x.avif" alt="Homepage" width="100%">
                 <p>Iceland is a beautiful country in the North Atlantic, famous for its dramatic landscapes. The island is full of volcanoes, glaciers, geysers, and waterfalls, making it a haven for nature lovers. With a unique combination of fire and ice, it offers everything from hot springs to snow-covered mountains. The capital, Reykjavik, is a small but lively city known for its modern culture and vibrant arts scene. Iceland also has long summer days where the sun barely sets and winters where the Northern Lights light up the night sky.</p>
@@ -65,44 +69,34 @@
     <div class="gallery card">
         <div>
             <picture>
+
                 <source
-                    srcset="https://dummyimage.com/400x400/000/fff, https://dummyimage.com/800x800/000/fff 2x, https://dummyimage.com/1200x1200/000/fff 3x"
-                    media="(max-width: 400px)">
-                <source
-                    srcset="https://dummyimage.com/800x800/000/f00, https://dummyimage.com/1600x1600/000/f00 2x, https://dummyimage.com/2400x2400/000/f00 3x"
+                    srcset=" images/Iceland-Gallery-2-480x.webp"
                     media="(max-width: 800px)">
                 <source
-                    srcset="https://dummyimage.com/1200x1200/000/0f0, https://dummyimage.com/2400x2400/000/0f0 2x, https://dummyimage.com/3600x3600/000/0f0 3x"
+                    srcset=" images/Iceland-Gallery-2-960x.webp" 
                     media="(max-width: 1200px)">
-                <img src="https://dummyimage.com/3600x3600/000/fff" alt="dummy image">
+                <img src="images/Iceland-Gallery-2-1280x.webp" alt=" Gallery Image 1">
             </picture>
         </div>
         <div>
             <picture>
                 <source
-                    srcset="https://dummyimage.com/400x400/000/fff, https://dummyimage.com/800x800/000/fff 2x, https://dummyimage.com/1200x1200/000/fff 3x"
-                    media="(max-width: 400px)">
-                <source
-                    srcset="https://dummyimage.com/800x800/000/f00, https://dummyimage.com/1600x1600/000/f00 2x, https://dummyimage.com/2400x2400/000/f00 3x"
+                    srcset=" images/Iceland-Gallery-3-500x.webp"
                     media="(max-width: 800px)">
                 <source
-                    srcset="https://dummyimage.com/1200x1200/000/0f0, https://dummyimage.com/2400x2400/000/0f0 2x, https://dummyimage.com/3600x3600/000/0f0 3x"
+                    srcset=" images/Iceland-Gallery-3-1000x.webp" 
                     media="(max-width: 1200px)">
-                <img src="https://dummyimage.com/3600x3600/000/fff" alt="dummy image">
+                <img src="images/Iceland-Gallery-3.webp" alt=" Gallery Image 1">
             </picture>
         </div>
         <div>
             <picture>
+                
                 <source
-                    srcset="https://dummyimage.com/400x400/000/fff, https://dummyimage.com/800x800/000/fff 2x, https://dummyimage.com/1200x1200/000/fff 3x"
-                    media="(max-width: 400px)">
-                <source
-                    srcset="https://dummyimage.com/800x800/000/f00, https://dummyimage.com/1600x1600/000/f00 2x, https://dummyimage.com/2400x2400/000/f00 3x"
-                    media="(max-width: 800px)">
-                <source
-                    srcset="https://dummyimage.com/1200x1200/000/0f0, https://dummyimage.com/2400x2400/000/0f0 2x, https://dummyimage.com/3600x3600/000/0f0 3x"
+                    srcset=" images/Iceland-Gallery-9-1000x.jpg" 
                     media="(max-width: 1200px)">
-                <img src="https://dummyimage.com/3600x3600/000/fff" alt="dummy image">
+                <img src="images/Iceland-Gallery-9.jpg" alt=" Gallery Image 1">
             </picture>
         </div>
         <!-- Empty Div to shift button to center -->
